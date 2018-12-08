@@ -10,7 +10,7 @@ port = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=1)
 
 #Call a number and check for status
 networkData = ""
-port.write('ATD9861582056+'+';\r')      # Disable the Echo
+port.write('ATD9861098610+'+';\r')      # Disable the Echo
 time.sleep(3)
 networkData = port.read(30)
 print networkData
